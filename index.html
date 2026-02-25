@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aleksi Vanhatalo</title>
+  <style>
+    :root{
+      --bg: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --line: #e5e7eb;
+      --nav: #f3f4f6;
+      --card: #ffffff;
+      --shadow: 0 6px 18px rgba(0,0,0,.06);
+      --radius: 14px;
+      --max: 1100px;
+    }
+    *{ box-sizing: border-box; }
+    body{
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.5;
+    }
+    a{ color: inherit; text-decoration: none; }
+    .container{
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    /* NAV */
+    .nav{
+      background: var(--nav);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav-inner{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px 0;
+    }
+    .logo{
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: .04em;
+    }
+    .menu{
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .menu a{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 34px;
+      padding: 0 12px;
+      border-radius: 10px;
+      border: 1px solid #d1d5db;
+      background: #e5e7eb;
+      font-size: 14px;
+      color: #374151;
+    }
+
+    /* HERO */
+    .hero-wrap{ padding: 28px 0 10px; }
+    .hero{
+      background: #e5e7eb;
+      border: 1px solid #d1d5db;
+      border-radius: var(--radius);
+      padding: 56px 18px;
+      text-align: center;
+    }
+    .hero h1{
+      margin: 0 0 10px;
+      font-size: clamp(28px, 3.2vw, 44px);
+      letter-spacing: -0.02em;
+    }
+    .hero p{
+      margin: 0 auto 18px;
+      max-width: 700px;
+      color: #4b5563;
+      font-size: 16px;
+    }
+    .btn{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 42px;
+      padding: 0 18px;
+      border-radius: 12px;
+      border: 1px solid #9ca3af;
+      background: #9ca3af;
+      color: #111827;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    /* FEATURES */
+    .section{ padding: 26px 0 42px; }
+    .grid{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .card{
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 18px;
+      min-height: 170px;
+    }
+    .card h3{
+      margin: 0 0 8px;
+      font-size: 18px;
+    }
+    .card p{
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* FOOTER */
+    footer{
+      border-top: 1px solid var(--line);
+      background: #f3f4f6;
+      padding: 18px 0;
+      color: #4b5563;
+      font-size: 14px;
+    }
+    .footer-inner{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 900px){
+      .grid{ grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="logo">Aleksi Vanhatalo</div>
+      <nav class="menu">
+        <a href="#">Etusivu</a>
+        <a href="#">Kuka olen?</a>
+        <a href="#">Osaamiseni</a>
+        <a href="#">Projektini</a>
+        <a href="#">Ota yhteyttä</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero-wrap">
+      <div class="container">
+        <div class="hero">
+          <h1>ICT-infra ja pilvipalveluopiskelija</h1>
+          <p>
+            Olen ICT-infrastruktuuriin ja pilvipalveluihin erikoistuva opiskelija, joka
+            rakentaa toimivia, turvallisia ja skaalautuvia IT-ympäristöjä. Tavoitteeni on
+            tuottaa ratkaisuja, jotka parantavat järjestelmien luotettavuutta,
+            suorituskykyä ja tietoturvaa.
+          </p>
+          <a class="btn" href="#">Katso projektit</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section">
+      <div class="container">
+        <div class="grid">
+
+          <article class="card">
+            <h3>Pilvipalvelut</h3>
+            <p>
+              Ymmärrän pilviympäristöjen (esim. Azure, AWS) perusteet ja osaan
+              rakentaa virtuaalikoneita, verkkoja sekä hallita käyttöoikeuksia.
+              Keskityn skaalautuviin ja kustannustehokkaisiin ratkaisuihin.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Verkot & infrastruktuuri</h3>
+            <p>
+              Hallitsen lähiverkkojen, palvelinympäristöjen ja perusinfrastruktuurin
+              suunnittelun sekä ylläpidon. Ymmärrän IP-osoitteistuksen,
+              reitityksen ja palvelinroolien merkityksen kokonaisuudessa.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Tietoturva & luotettavuus</h3>
+            <p>
+              Kiinnitän huomiota tietoturvaan, varmistuksiin ja järjestelmien
+              toimintavarmuuteen. Pyrin rakentamaan ratkaisuja, jotka kestävät
+              häiriötilanteet ja suojaavat kriittiset tiedot.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Aleksi Vanhatalo</div>
+      <div>ICT-infra & pilvipalvelut</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
