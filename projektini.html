@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projektini | Aleksi Vanhatalo</title>
+  <style>
+ body{
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  background: #ffffff;
+  color: #1f2937;
+}
+
+    header{
+      background:#f3f4f6;
+      padding:15px;
+      border-bottom:1px solid #e5e7eb;
+    }
+
+    nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      max-width:1000px;
+      margin:auto;
+      gap:16px;
+      flex-wrap:wrap;
+    }
+
+    .logo{
+      font-weight:bold;
+      font-size:18px;
+    }
+
+    .menu{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+
+    .menu a{
+      text-decoration:none;
+      background:#e5e7eb;
+      padding:8px 12px;
+      border-radius:8px;
+      color:#333;
+      transition:background 0.2s ease, transform 0.2s ease;
+    }
+
+    .menu a:hover{
+      background:#d1d5db;
+      transform:translateY(-2px);
+    }
+
+    .container{
+      max-width:1000px;
+      margin:auto;
+      padding:40px 20px;
+    }
+
+    h1{
+      text-align:center;
+      margin-bottom:30px;
+    }
+
+    .projects{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:20px;
+    }
+
+    .card{
+      background:#f9fafb;
+      border:1px solid #e5e7eb;
+      border-radius:10px;
+      overflow:hidden;
+      transition:transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover{
+      transform:translateY(-6px);
+      box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .image-box{
+      height:190px;
+      background:#d1d5db;
+    }
+
+    .image-box img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+
+    .card-content{
+      padding:18px;
+    }
+
+    .card-content h3{
+      margin-top:0;
+      margin-bottom:10px;
+    }
+
+    .card-content p{
+      color:#4b5563;
+      margin:0;
+    }
+
+    footer{
+      background:#f3f4f6;
+      text-align:center;
+      padding:15px;
+      margin-top:40px;
+      border-top:1px solid #e5e7eb;
+    }
+
+    @media(max-width:800px){
+      .projects{
+        grid-template-columns:1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">Aleksi Vanhatalo</div>
+    <div class="menu">
+      <a href="index.html">Etusivu</a>
+      <a href="kuka-olen.html">Kuka olen?</a>
+      <a href="osaamiseni.html">Osaamiseni</a>
+      <a href="projektini.html">Projektini</a>
+      <a href="ota-yhteytta.html">Ota yhteyttä</a>
+    </div>
+  </nav>
+</header>
+
+<div class="container">
+  <h1>Projektini</h1>
+
+  <div class="projects">
+    <div class="card">
+      <div class="image-box">
+        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80" alt="Server infrastructure project">
+      </div>
+      <div class="card-content">
+        <h3>Kotilabra</h3>
+        <p>
+          Rakensin harjoitusympäristön virtuaalikoneilla, jossa testasin
+          verkkoasetuksia ja palvelinrooleja.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="image-box">
+        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=80" alt="Cloud computing project">
+      </div>
+      <div class="card-content">
+        <h3>Pilviympäristö</h3>
+        <p>
+          Harjoittelin virtuaalikoneiden käyttöönottoa sekä verkkojen
+          määrittämistä pilvipalveluympäristössä.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="image-box">
+        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=900&q=80" alt="Cyber security project">
+      </div>
+      <div class="card-content">
+        <h3>Tietoturva</h3>
+        <p>
+          Harjoittelin tietoturvan peruskäytäntöjä kuten käyttäjähallintaa,
+          päivityksiä ja varmistuksia.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  © 2026 Aleksi Vanhatalo
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Osaamiseni | Aleksi Vanhatalo</title>
+  <style>
+  body{
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  background: #ffffff;
+  color: #1f2937;
+}
+
+    header{
+      background:#f3f4f6;
+      padding:15px;
+      border-bottom:1px solid #e5e7eb;
+    }
+
+    nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      max-width:1000px;
+      margin:auto;
+      gap:16px;
+      flex-wrap:wrap;
+    }
+
+    .logo{
+      font-weight:bold;
+      font-size:18px;
+    }
+
+    .menu{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+
+    .menu a{
+      text-decoration:none;
+      background:#e5e7eb;
+      padding:8px 12px;
+      border-radius:8px;
+      color:#333;
+      transition:background 0.2s ease, transform 0.2s ease;
+    }
+
+    .menu a:hover{
+      background:#d1d5db;
+      transform:translateY(-2px);
+    }
+
+    .container{
+      max-width:1000px;
+      margin:auto;
+      padding:40px 20px;
+    }
+
+    h1{
+      text-align:center;
+      margin-bottom:30px;
+    }
+
+    .skills-section{
+      background:#e5e7eb;
+      padding:25px;
+      border-radius:10px;
+      margin-bottom:35px;
+      border:1px solid #d1d5db;
+    }
+
+    .skill{
+      margin-bottom:20px;
+    }
+
+    .skill:last-child{
+      margin-bottom:0;
+    }
+
+    .skill-name{
+      font-weight:bold;
+      margin-bottom:8px;
+    }
+
+    .skill-bar{
+      width:100%;
+      height:26px;
+      background:#d1d5db;
+      border-radius:20px;
+      overflow:hidden;
+    }
+
+    .skill-fill{
+      height:100%;
+      background:#9ca3af;
+      border-radius:20px;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:20px;
+    }
+
+    .other-skills{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:20px;
+    }
+
+    .card{
+      background:#f9fafb;
+      border:1px solid #e5e7eb;
+      border-radius:10px;
+      padding:20px;
+      transition:transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover{
+      transform:translateY(-6px);
+      box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    footer{
+      background:#f3f4f6;
+      text-align:center;
+      padding:15px;
+      margin-top:40px;
+      border-top:1px solid #e5e7eb;
+    }
+
+    @media(max-width:800px){
+      .other-skills{
+        grid-template-columns:1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">Aleksi Vanhatalo</div>
+    <div class="menu">
+      <a href="index.html">Etusivu</a>
+      <a href="kuka-olen.html">Kuka olen?</a>
+      <a href="osaamiseni.html">Osaamiseni</a>
+      <a href="projektini.html">Projektini</a>
+      <a href="ota-yhteytta.html">Ota yhteyttä</a>
+    </div>
+  </nav>
+</header>
+
+<div class="container">
+  <h1>Osaamiseni</h1>
+
+  <div class="skills-section">
+    <div class="skill">
+      <div class="skill-name">Pilvipalvelut</div>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width:75%;"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">Verkot ja infrastruktuuri</div>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width:80%;"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">Tietoturvan perusteet</div>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width:70%;"></div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="section-title">Muut taidot</h2>
+
+  <div class="other-skills">
+    <div class="card">
+      <strong>Käyttöjärjestelmät</strong><br>
+      Perusosaamista Windows- ja Linux-ympäristöistä sekä niiden käytöstä ja hallinnasta.
+    </div>
+
+    <div class="card">
+      <strong>Palvelinympäristöt</strong><br>
+      Ymmärrän palvelimien roolia osana IT-infrastruktuuria ja osaan harjoitella niitä virtuaaliympäristöissä.
+    </div>
+
+    <div class="card">
+      <strong>Ongelmanratkaisu</strong><br>
+      Lähestyn teknisiä ongelmia rauhallisesti ja loogisesti ja pyrin löytämään toimivan ratkaisun vaihe vaiheelta.
+    </div>
+  </div>
+</div>
+
+<footer>
+  © 2026 Aleksi Vanhatalo
+</footer>
+
+</body>
+</html>

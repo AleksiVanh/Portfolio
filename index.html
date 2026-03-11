@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aleksi Vanhatalo | Etusivu</title>
+  <meta name="description" content="Aleksi Vanhatalo - ICT-infra ja pilvipalveluopiskelija">
+  <style>
+    body{
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  background: #ffffff;
+  color: #1f2937;
+}
+
+    header{
+      background:#f3f4f6;
+      padding:15px;
+      border-bottom:1px solid #e5e7eb;
+    }
+
+    nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      max-width:1000px;
+      margin:auto;
+      gap:16px;
+      flex-wrap:wrap;
+    }
+
+    .logo{
+      font-weight:bold;
+      font-size:18px;
+    }
+
+    .menu{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+
+    .menu a{
+      text-decoration:none;
+      background:#e5e7eb;
+      padding:8px 12px;
+      border-radius:8px;
+      color:#333;
+      transition:background 0.2s ease, transform 0.2s ease;
+    }
+
+    .menu a:hover{
+      background:#d1d5db;
+      transform:translateY(-2px);
+    }
+
+    .container{
+      max-width:1000px;
+      margin:auto;
+      padding:40px 20px;
+    }
+
+    .hero{
+      background:#e5e7eb;
+      padding:60px 20px;
+      border-radius:10px;
+      text-align:center;
+      margin-bottom:40px;
+      border:1px solid #d1d5db;
+    }
+
+    .hero h1{
+      margin-top:0;
+      margin-bottom:10px;
+      font-size:40px;
+    }
+
+    .hero p{
+      max-width:750px;
+      margin:0 auto 20px;
+      color:#4b5563;
+    }
+
+    .btn{
+      display:inline-block;
+      background:#9ca3af;
+      padding:10px 16px;
+      border-radius:8px;
+      text-decoration:none;
+      color:white;
+      margin-top:15px;
+      transition:background 0.2s ease, transform 0.2s ease;
+    }
+
+    .btn:hover{
+      background:#6b7280;
+      transform:translateY(-2px);
+    }
+
+    .features{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:20px;
+    }
+
+    .card{
+      background:#f9fafb;
+      border:1px solid #e5e7eb;
+      border-radius:10px;
+      padding:20px;
+      transition:transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover{
+      transform:translateY(-6px);
+      box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    footer{
+      background:#f3f4f6;
+      text-align:center;
+      padding:15px;
+      margin-top:40px;
+      border-top:1px solid #e5e7eb;
+    }
+
+    @media(max-width:800px){
+      .features{
+        grid-template-columns:1fr;
+      }
+
+      .hero h1{
+        font-size:30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">Aleksi Vanhatalo</div>
+
+    <div class="menu">
+      <a href="index.html">Etusivu</a>
+      <a href="kuka-olen.html">Kuka olen?</a>
+      <a href="osaamiseni.html">Osaamiseni</a>
+      <a href="projektini.html">Projektini</a>
+      <a href="ota-yhteytta.html">Ota yhteyttä</a>
+    </div>
+  </nav>
+</header>
+
+<div class="container">
+  <div class="hero">
+    <h1>ICT-infra ja pilvipalveluopiskelija</h1>
+    <p>
+      Olen ICT-infrastruktuuriin ja pilvipalveluihin erikoistuva opiskelija, joka
+      rakentaa toimivia, turvallisia ja skaalautuvia IT-ympäristöjä. Tavoitteeni on
+      kehittää osaamistani käytännön projekteissa ja rakentaa luotettavia ratkaisuja.
+    </p>
+    <a class="btn" href="projektini.html">Katso projektit</a>
+  </div>
+
+  <div class="features">
+    <div class="card">
+      <h3>Pilvipalvelut</h3>
+      <p>
+        Perusosaamista pilvipalveluista, virtuaalikoneista, verkoista ja
+        käyttöoikeuksien hallinnasta.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Verkot</h3>
+      <p>
+        Ymmärrän lähiverkkojen toiminnan, IP-osoitteistuksen sekä
+        palvelinympäristöjen perusteet.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Tietoturva</h3>
+      <p>
+        Kiinnitän huomiota turvallisiin käytäntöihin kuten päivityksiin,
+        varmistuksiin ja käyttäjähallintaan.
+      </p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  © 2026 Aleksi Vanhatalo
+</footer>
+
+</body>
+</html>
